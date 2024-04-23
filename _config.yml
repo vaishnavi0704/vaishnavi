@@ -2,8 +2,8 @@ remote_theme: pages-themes/hacker@v0.2.0
 plugins:
   - jekyll-remote-theme # add this line to the plugins list if you already have one
 
-title: Raj Randive
-description: Raj's Blog Posts
+title: Raj Randive (21BCP378)
+description: Raj's Blog Posts about 3-Tier Architecture , deploying with docker.
 show_downloads: true
 google_analytics:
 theme: jekyll-theme-hacker

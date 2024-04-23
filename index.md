@@ -3,20 +3,25 @@ layout: default
 ---
 
 <!-- **bold**, _italic_, ~~strikethrough~~ or `keyword`. -->
+<!-- [Link to another page](./another-page.html). -->
 
-**3-Tier Architecture - Developing with Docker**
+**3-Tier Architecture - Developing with Docker created by (21BCP378)**
 
-[Link to another page](./another-page.html).
+This app shows a simple user profile app set up using
 
-There should be whitespace between paragraphs.
+1. index.html with pure js and css styles
+2. nodejs backend with express module
+3. mongodb for data storage
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+All components are docker-based
 
-# Header 1
+<!-- # Header 1 -->
 
 This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
 
-## Header 2
+## Step 1. First of all create a docker network named "mongo-network" (in my case)
+
+![Step-Image1](./assets/images/1.png)
 
 > This is a blockquote following a header.
 >
@@ -95,8 +100,6 @@ end
 - level 1 item
 
 ### Small image
-
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
 
 ### Large image
 
