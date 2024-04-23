@@ -48,7 +48,7 @@ docker run -p 27017:27017 -e MONGO_INIT_ROOT_USERNAME=admin -e MONGO_INIT_ROOT_U
 - At last give the image name "mongo". If no tag is passed, by default it takes latest tag.
 - Check the spinned container via docker ps command.
 
-  ![Step-Image1](./assets/images/3.png)
+![Step-Image1](./assets/images/3.png)
 
 ## Step 4. create "mongo-express" container which is used to manage the mongo database using following command.
 
@@ -64,7 +64,7 @@ docker run -p 8081:8081 -e ME_CONFIG_MONGODB_ADMINUSERNAME=admin -e ME_CONFIG_MO
 - At last give the image name "mongo". If no tag is passed, by default it takes latest tag.
 - Check the spinned container via docker ps command.
 
-  ![Step-Image1](./assets/images/4.png)
+![Step-Image1](./assets/images/4.png)
 
 ## Step 5. Open http://localhost:8081 and create two databases for our sample app.
 
