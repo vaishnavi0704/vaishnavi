@@ -190,17 +190,23 @@ docker run -d -p 3000:3000 --network=mongo-network <sample-app-name>
 
 ---
 
-> Key Features and Benefits:
+> ### **Key Features and Benefits:**
 
 > **Modularity:** Each tier of our architecture is encapsulated within its own Docker container, allowing for independent scaling and management.
+
 > **Scalability:** With Docker's orchestration tools like Docker Swarm or Kubernetes, scaling our application horizontally becomes seamless and efficient.
+
 > **Portability:** Docker containers are highly portable, enabling consistent deployment across different environments, from development to production.
+
 > **Ease of Management:** Docker's containerization simplifies deployment, configuration, and maintenance tasks, reducing overhead and enhancing operational efficiency.
+
 > **Flexibility:** By decoupling the application logic, database, and user interface into separate tiers, our architecture offers flexibility for future enhancements and modifications.
 
 <!--  -->
 
-> Conclusion: By adopting a 3-tier architecture with Docker, we've created a scalable and resilient foundation for deploying modern applications. Whether you're building a small-scale prototype or a large-scale production system, leveraging containerization can streamline your development and deployment workflows, empowering you to focus on delivering value to your users..
+> ### **Conclusion**:
+
+> By adopting a 3-tier architecture with Docker, we've created a scalable and resilient foundation for deploying modern applications. Whether you're building a small-scale prototype or a large-scale production system, leveraging containerization can streamline your development and deployment workflows, empowering you to focus on delivering value to your users..
 
 <!--  -->
 <!--  -->
@@ -218,4 +224,4 @@ docker run -d -p 3000:3000 --network=mongo-network <sample-app-name>
 
 ### Name: Raj Randive (21BCP378)
 
-_Written on April 24, 2024_
+_Written on April 23, 2024_
