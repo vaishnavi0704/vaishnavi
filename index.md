@@ -5,14 +5,14 @@ layout: default
 <!-- **bold**, _italic_, ~~strikethrough~~ or `keyword`. -->
 <!-- [Link to another page](./another-page.html). -->
 
-# **3-Tier Architecture Application Developing using Docker created by (21BCP378)**
+# **3-Tier Architecture Application Developing using Docker**
 
 ## Prerequisites
 
 ---
 
 - System: Ubuntu 22.04.4 LTS (Jammy Jellyfish)
-- Install "Docker" on to your machine. For installing visit: [Docker Installation Link](https://docs.docker.com/engine/install/ubuntu/)
+- Install "Docker" on your machine. For installing Docker, visit: [Official Documentation](https://docs.docker.com/engine/install/ubuntu/)
 
 ## Overview:
 
