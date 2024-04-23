@@ -7,6 +7,8 @@ layout: default
 
 # **3-Tier Architecture Application Developing using Docker**
 
+Follow my GitHub Account: [Raj Randive](https://github.com/Raj-Randive)
+
 ## Prerequisites
 
 ---
@@ -18,7 +20,7 @@ layout: default
 
 ---
 
-Our project implements a 3-tier architecture using Docker containers. The architecture consists of:
+My project implements a 3-tier architecture using Docker containers. The architecture consists of:
 
 - Sample-App container: Hosts the application logic.
 - mongo-express container: Provides a user-friendly interface for MongoDB.
