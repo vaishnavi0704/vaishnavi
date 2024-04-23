@@ -196,39 +196,42 @@ docker run -d -p 3000:3000 --network=mongo-network <sample-app-name>
 
 ---
 
+<br/>
+
 ### **Key Features and Benefits:**
 
 <div style="text-align: justify">
 
-**Modularity:** Each tier of our architecture is encapsulated within its own Docker container, allowing for independent scaling and management.
+Modularity: Each tier of our architecture is encapsulated within its own Docker container, allowing for independent scaling and management.
 
 </div>
 
 <div style="text-align: justify">
 
-**Scalability:** With Docker's orchestration tools like Docker Swarm or Kubernetes, scaling our application horizontally becomes seamless and efficient.
+Scalability: With Docker's orchestration tools like Docker Swarm or Kubernetes, scaling our application horizontally becomes seamless and efficient.
 
 </div>
 
 <div style="text-align: justify">
 
-**Portability:** Docker containers are highly portable, enabling consistent deployment across different environments, from development to production.
+Portability: Docker containers are highly portable, enabling consistent deployment across different environments, from development to production.
 
 </div>
 
 <div style="text-align: justify">
 
-**Ease of Management:** Docker's containerization simplifies deployment, configuration, and maintenance tasks, reducing overhead and enhancing operational efficiency.
+Ease of Management: Docker's containerization simplifies deployment, configuration, and maintenance tasks, reducing overhead and enhancing operational efficiency.
 
 </div>
 
 <div style="text-align: justify">
 
-**Flexibility:** By decoupling the application logic, database, and user interface into separate tiers, our architecture offers flexibility for future enhancements and modifications.
+Flexibility: By decoupling the application logic, database, and user interface into separate tiers, our architecture offers flexibility for future enhancements and modifications.
 
 </div>
 
 <!--  -->
+<br/>
 
 ### **Conclusion**:
 
@@ -238,19 +241,9 @@ By adopting a 3-tier architecture with Docker, we've created a scalable and resi
 
 </div>
 
-<!--  -->
-<!--  -->
+<br/>
 
 ---
-
-<!-- ###### Header 6
-
-| head1        | head two          | three |
-| :----------- | :---------------- | :---- |
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  | -->
 
 ### Name: Raj Randive (21BCP378)
 
