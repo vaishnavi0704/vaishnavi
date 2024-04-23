@@ -200,25 +200,41 @@ docker run -d -p 3000:3000 --network=mongo-network <sample-app-name>
 
 <div style="text-align: justify">
 
-- **Modularity:** Each tier of our architecture is encapsulated within its own Docker container, allowing for independent scaling and management.
+**Modularity:** Each tier of our architecture is encapsulated within its own Docker container, allowing for independent scaling and management.
 
-- **Scalability:** With Docker's orchestration tools like Docker Swarm or Kubernetes, scaling our application horizontally becomes seamless and efficient.
+</div>
 
-- **Portability:** Docker containers are highly portable, enabling consistent deployment across different environments, from development to production.
+<div style="text-align: justify">
 
-- **Ease of Management:** Docker's containerization simplifies deployment, configuration, and maintenance tasks, reducing overhead and enhancing operational efficiency.
+**Scalability:** With Docker's orchestration tools like Docker Swarm or Kubernetes, scaling our application horizontally becomes seamless and efficient.
 
-- **Flexibility:** By decoupling the application logic, database, and user interface into separate tiers, our architecture offers flexibility for future enhancements and modifications.
+</div>
+
+<div style="text-align: justify">
+
+**Portability:** Docker containers are highly portable, enabling consistent deployment across different environments, from development to production.
+
+</div>
+
+<div style="text-align: justify">
+
+**Ease of Management:** Docker's containerization simplifies deployment, configuration, and maintenance tasks, reducing overhead and enhancing operational efficiency.
+
+</div>
+
+<div style="text-align: justify">
+
+**Flexibility:** By decoupling the application logic, database, and user interface into separate tiers, our architecture offers flexibility for future enhancements and modifications.
 
 </div>
 
 <!--  -->
 
-<div style="text-align: justify">
-
 ### **Conclusion**:
 
-- By adopting a 3-tier architecture with Docker, we've created a scalable and resilient foundation for deploying modern applications. Whether you're building a small-scale prototype or a large-scale production system, leveraging containerization can streamline your development and deployment workflows, empowering you to focus on delivering value to your users.
+<div style="text-align: justify">
+
+By adopting a 3-tier architecture with Docker, we've created a scalable and resilient foundation for deploying modern applications. Whether you're building a small-scale prototype or a large-scale production system, leveraging containerization can streamline your development and deployment workflows, empowering you to focus on delivering value to your users.
 
 </div>
 
