@@ -60,7 +60,7 @@ docker network ls
 
 ```js
 // Docker Command
-docker run -p 27017:27017 -e MONGO_INIT_ROOT_USERNAME=admin -e MONGO_INIT_ROOT_USERNAME=password --net mongo-network --name=mongodb -d mongo
+docker run -p 27017:27017 -e MONGO_INITDB_ROOT_USERNAME=admin -e MONGO_INITDB_ROOT_PASSWORD=password --net mongo-network --name=mongodb -d mongo
 ```
 
 - 27017 is by default port for mongodb container (refer mongodb DockerHub repository for more details).
@@ -75,7 +75,7 @@ docker run -p 27017:27017 -e MONGO_INIT_ROOT_USERNAME=admin -e MONGO_INIT_ROOT_U
 
 ```js
 // Docker Command
-docker run -p 8081:8081 -e ME_CONFIG_MONGODB_ADMINUSERNAME=admin -e ME_CONFIG_MONGODB_ADMINPASSWORD=password -e ME_CONFIG_MONGODB_SERVER=mongodb --network=mongo-network --name=mongo-express -d mongo-express
+docker run -p 8081:8081 --network=mongo-network --name=mongo-express -e ME_CONFIG_MONGODB_ADMINUSERNAME=admin -e ME_CONFIG_MONGODB_ADMINPASSWORD=password -e ME_CONFIG_MONGODB_SERVER=mongodb  -d mongo-express
 ```
 
 - 8081 is by default port for mongo-express container (refer mongo-express DockerHub repository for more details).
