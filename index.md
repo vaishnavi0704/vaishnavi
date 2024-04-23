@@ -5,7 +5,24 @@ layout: default
 <!-- **bold**, _italic_, ~~strikethrough~~ or `keyword`. -->
 <!-- [Link to another page](./another-page.html). -->
 
-**3-Tier Architecture - Developing with Docker created by (21BCP378)**
+# **3-Tier Architecture Application Developing using Docker created by (21BCP378)**
+
+## Prerequisites
+
+---
+
+- System: Ubuntu 22.04.4 LTS (Jammy Jellyfish)
+- Install "Docker" on to your machine. For installing visit: [Docker Installation Link](https://docs.docker.com/engine/install/ubuntu/)
+
+## Overview:
+
+---
+
+Our project implements a 3-tier architecture using Docker containers. The architecture consists of:
+
+- Sample-App container: Hosts the application logic.
+- mongo-express container: Provides a user-friendly interface for MongoDB.
+- MongoDB container: Houses the database.
 
 This app shows a simple user profile app set up using
 
@@ -13,11 +30,9 @@ This app shows a simple user profile app set up using
 2. nodejs backend with express module
 3. mongodb for data storage
 
-All components are docker-based
+This modular setup enables independent scaling, ensures consistent deployment across environments, and simplifies maintenance tasks, laying a solid foundation for scalable and efficient application deployment.
 
-<!-- # Header 1 -->
-
-## Step 1. First of all create a docker network named "mongo-network" (in-my-case)
+## Step 1. Create a docker network for container isolation.
 
 ```js
 // Docker Command
@@ -35,7 +50,7 @@ docker network ls
 
 ![Step-Image1](./assets/images/2.png)
 
-## Step 3. create "mongodb" container using following command
+## Step 3. Create "mongodb" container using following command
 
 ```js
 // Docker Command
@@ -43,14 +58,14 @@ docker run -p 27017:27017 -e MONGO_INIT_ROOT_USERNAME=admin -e MONGO_INIT_ROOT_U
 ```
 
 - 27017 is by default port for mongodb container (refer mongodb DockerHub repository for more details).
-- -e flag here means environment variables.
-- We are spinning this container inside our mongo-network which we created earlier.
-- At last give the image name "mongo". If no tag is passed, by default it takes latest tag.
-- Check the spinned container via docker ps command.
+- -e flag is for environment variables.
+- We are spinning the container inside our mongo-network.
+- Select the image "mongo". If no tag is passed, by default it takes latest tag.
+- Check the spinned container "via docker ps" command.
 
 ![Step-Image1](./assets/images/3.png)
 
-## Step 4. create "mongo-express" container which is used to manage the mongo database using following command.
+## Step 4. Create "mongo-express" container which is used to manage the mongo database using following command.
 
 ```js
 // Docker Command
@@ -58,19 +73,19 @@ docker run -p 8081:8081 -e ME_CONFIG_MONGODB_ADMINUSERNAME=admin -e ME_CONFIG_MO
 ```
 
 - 8081 is by default port for mongo-express container (refer mongo-express DockerHub repository for more details).
-- -e flag here means environment variables.
-- We are spinning this container inside our mongo-network which we created earlier.
+- -e flag is for environment variables.
+- We are spinning the container inside our mongo-network.
 - Refer DockerHub mongo-express Repository to get all the necessary environment variables.
-- At last give the image name "mongo". If no tag is passed, by default it takes latest tag.
-- Check the spinned container via docker ps command.
+- Select the image "mongo-express". If no tag is passed, by default it takes latest tag.
+- Check the spinned container via "docker ps" command.
 
 ![Step-Image1](./assets/images/4.png)
 
-## Step 5. Open http://localhost:8081 and create two databases for our sample app.
+## Step 5. Open http://localhost:8081 and create two databases for our Sample-App.
 
 ![Step-Image1](./assets/images/5.png)
 
-## Step 6. Create a "user" collection inside our user-accounts database for our sample app which we are goning to run soon.
+## Step 6. Create a "user" collection inside our user-accounts database for our Sample-App which we are going to run soon.
 
 ![Step-Image1](./assets/images/6.png)
 
@@ -122,7 +137,7 @@ docker images
 docker build -t <our-sample-app-name> .
 ```
 
-- Here -t is for tagging our Sample-App image.
+- "-t" is for tagging our Sample-App image.
 - We have added "." at the end because our dockerfile is in current directory where we are standing right now i.e., inside app folder.
 
 ![Step-Image1](./assets/images/11.png)
@@ -154,106 +169,51 @@ docker run -d -p 3000:3000 --network=mongo-network <sample-app-name>
 
 ## Step 14. Open http://locahost:3000 to see our Sample-App home page.
 
-- Click "Edit the Profile" button and update the deatils. It will save the information on to our database.
+- Click "Edit Profile" button and update the details. It will save the information on to our database.
 
 ![Step-Image1](./assets/images/14.png)
 
-## Step 15. After updating the deatils.
+## Step 15. After updating the details.
 
 ![Step-Image1](./assets/images/15.png)
 
-## Step 16. Go to our "users" collection to see the data.
+## Step 16. Go to our "users" collection to verify our data.
 
 ![Step-Image1](./assets/images/16.png)
 
-## Step 17. Click on the "userid" to see deatils.
+## Step 17. Click on the "userid" to see more detailed info about that user.
 
 ![Step-Image1](./assets/images/17.png)
 
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
+<!--  -->
+<!--  -->
 
-### This is how one can setup a 3-Tier Architecture using dockers.
+---
 
-#### Header 4
+> This is how one can setup a 3-Tier Architecture using dockers.
 
-- This is an unordered list following a header.
-- This is an unordered list following a header.
-- This is an unordered list following a header.
+---
 
-##### Header 5
-
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
-
-###### Header 6
+<!-- ###### Header 6
 
 | head1        | head two          | three |
 | :----------- | :---------------- | :---- |
 | ok           | good swedish fish | nice  |
 | out of stock | good and plenty   | nice  |
 | ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-### There's a horizontal rule below this.
+| ok           | good `zoute` drop | yumm  | -->
 
 ---
-
-### Here is an unordered list:
-
-- Item foo
-- Item bar
-- Item baz
-- Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
 
 ### Definition lists can be used with HTML syntax.
 
 <dl>
 <dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
+<dd>Raj Randive</dd>
+<dt>Date</dt>
 <dd>1952</dd>
 <dt>Birthplace</dt>
 <dd>Japan</dd>
 <dt>Color</dt>
 <dd>Green</dd>
 </dl>
-
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
-
-```
-The final element.
-```
