@@ -7,7 +7,7 @@ layout: default
 
 # **3-Tier Architecture Application Developing using Docker**
 
-Follow my GitHub Account: [Raj Randive](https://github.com/Raj-Randive)
+Follow my GitHub Account: [Vaishnavi lalwala](https://github.com/vaishnavi0704/vaishnavi)
 
 ## Prerequisites
 
@@ -85,11 +85,11 @@ docker run -p 8081:8081 --network=mongo-network --name=mongo-express -e ME_CONFI
 - Select the image "mongo-express". If no tag is passed, by default it takes latest tag.
 - Check the spinned container via "docker ps" command.
 
-![Step-Image1](./assets/images/4.png)
+![Step-Image1](4.png)
 
 ## Step 5. Open http://localhost:8081 and create two databases for our Sample-App.
 
-![Step-Image1](./assets/images/5.png)
+![Step-Image1](5.png)
 
 ## Step 6. Create a "user" collection inside our user-accounts database for our Sample-App which we are going to run soon.
 
@@ -97,7 +97,7 @@ docker run -p 8081:8081 --network=mongo-network --name=mongo-express -e ME_CONFI
 
 ## Step 7. Now clone the Sample-App on to your system and change the directory to app.
 
-- You can clone the Sample-App from here: [Github Link - Raj Randive](https://github.com/Raj-Randive/3-Tier-Architecture-Docker).
+- You can clone the Sample-App from here: [Github Link - vaishnavi lalwala](https://github.com/vaishnavi0704/vaishnavi).
 
 ![Step-Image1](./assets/images/7.png)
 
@@ -121,7 +121,7 @@ CMD ["node", "server.js"]
 - Open port 3000 as mentioned in our Sample-App.
 - At last Run "node server.js" using CMD option.
 
-![Step-Image1](./assets/images/8.png)
+![Step-Image1](8.png)
 
 ## Step 9. Change the admin and password you gave earlier in the "server.js" file.
 
@@ -146,7 +146,7 @@ docker build -t <our-sample-app-name> .
 - "-t" is for tagging our Sample-App image.
 - We have added "." at the end because our dockerfile is in current directory where we are standing right now i.e., inside app folder.
 
-![Step-Image1](./assets/images/11.png)
+![Step-Image1](11.png)
 
 ## Step 12. Confirm the created image using following command.
 
@@ -177,15 +177,15 @@ docker run -d -p 3000:3000 --network=mongo-network <sample-app-name>
 
 - Click "Edit Profile" button and update the details. It will save the information on to our database.
 
-![Step-Image1](./assets/images/14.png)
+![Step-Image1](14.png)
 
 ## Step 15. After updating the details.
 
-![Step-Image1](./assets/images/15.png)
+![Step-Image1](15.png)
 
 ## Step 16. Go to our "users" collection to verify our data.
 
-![Step-Image1](./assets/images/16.png)
+![Step-Image1](16.png)
 
 ## Step 17. Click on the "userid" to see more detailed info about that user.
 
@@ -245,6 +245,6 @@ By adopting a 3-tier architecture with Docker, we've created a scalable and resi
 
 ---
 
-### Name: Raj Randive (21BCP378)
+### Name: Vaishnavi lalwala (21BCP286)
 
 _Written on April 23, 2024_
